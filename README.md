@@ -16,4 +16,4 @@ Contributors names and contact info
 ex. Carlos Osorio 
 ex. [@OsorioDevelops](https://twitter.com/OsorioDevelops)
 
-PD: This has to be change into the Microverse README :D
+PD: This has to be change into the Microverse README :D Eventually, right now I am checking Linter
