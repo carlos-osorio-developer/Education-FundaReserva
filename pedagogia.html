@@ -5,9 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<title>FundaReserva.org</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Mandali&family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
-	<script src="https://kit.fontawesome.com/69c8e727d8.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/prefixfree.min.js"></script>
 </head>
 
@@ -17,27 +16,28 @@
 <header>
 	<div class="contenedor">
 		<div class="logo">
-			<a href="./index.html"><img src="img/logo.png" class="logo"></a>
+			<a class="big-logo" href="./index.html"><img src="img/logo.png" alt="logo"></a>
+			<a class="small-logo" href="./index.html"><img src="img/logo-crop.png" alt="logo"></a>
 		</div>
 		<div class="redes">
-			<a href="#" ><img src="img/email.png" class="email"></a>
-			<a href="#" ><img src="img/instagram.png" class="instagram"></a>
-			<a href="#" ><img src="img/facebook.png" class="facebook"></a>
+			<a href="#" ><img src="img/email.png" alt="email icon"></a>
+			<a href="#" ><img src="img/instagram.png" alt="instagram logo"></a>
+			<a href="#" ><img src="img/facebook.png" alt="facebook logo"></a>
 		</div>
 		<div class="menu">
-			<a class="unactive" href="./index.html">Inicio </a>
+			<a class="unactive"  href="./index.html">Inicio </a>
 			<a class="unactive" href="./nosotros.html">Nosotros </a>
-			<a href="./pedagogia.html" style="background-color: rgba(255,255,255,0.4);">Pedagogía </a>
+			<a class="unactive" href="./pedagogia.html" style="background-color: rgba(255,255,255,0.4);">Pedagogía </a>
 			<a class="unactive" href="./contacto.html">Contacto </a>
 		</div>
 		<div class="burguer-menu" id="burguer_menu">
-			<i class="fas fa-bars"></i>
+			<img src="/img/bars.png" alt="bars menu">
 		</div>
 	</div>
 
 	<div class="slide-menu" id="slide_menu">
 		<nav class="menu-principal">
-			<a class="unactive" href="./index.html">Inicio </a>
+			<a class="unactive"  href="./index.html">Inicio </a>
 			<a class="unactive" href="./nosotros.html">Nosotros </a>
 			<a href="./pedagogia.html" style="background-color: rgba(255,255,255,0.4);">Pedagogía </a>
 			<a class="unactive" href="./contacto.html">Contacto </a>
@@ -51,44 +51,105 @@
 <section class="pedag propuesta blue">
 	<div class="container left">
 		<img src="./img/pedag1_1.png" alt="vinculo-alumno-maestro">
-		<em><i class="fas fa-quote-left"></i>Si no existe una vinculación espiritual entre el que enseña y el que aprende, toda enseñanza es hostil y de consiguiente infecunda.</br>La educación es una obra de amor a los que aprenden. <i class="fas fa-quote-right"></i></br><span>(Manifiesto de Córdoba, 1918)</span></em>
+		<em><img src="img/openquote.png" alt="open quotation sign"> Si no existe una vinculación espiritual entre el que enseña y el que aprende, toda enseñanza es hostil y de consiguiente infecunda.</br>La educación es una obra de amor a los que aprenden. <img src="/img/closequote.png" alt="close quotation sign"></br><span>(Manifiesto de Córdoba, 1918)</span></em>
 	</div>
 	<div class="container right">
 		<h1>Propuesta pedagógica</h1>
-		<p>Nuestra propuesta pedagógica se inspira en el socio–constructivismo, y basa su didáctica en el aprendizaje a través del juego, para fomentar la interacción entre sus estudiantes y facilitar, por la misma vía, la resolución consensuada de problemas.</p>
-		<p>Este marco educativo promueve la identidad cultural, la solidificación de los valores y la realización de todos aquellos proyectos relacionados con el desarrollo del potencial de los habitantes de esta hermosa región santandereana.</p>
-		<p>Tenemos dos ejes transversales, sustentados en principios de diversidad, equidad y justicia:</p>
-		<ol>
-			<li>La formación de habilidades emocionales y comunicativas para la vida.</li>
-			<li>La construcción de conciencia y conductas ambientales responsables.</li>
-		</ol>		
+		<div class="innercontainer">
+			<p>Nuestra propuesta pedagógica se inspira en el socio–constructivismo, y basa su didáctica en el aprendizaje a través del juego, para fomentar la interacción entre sus estudiantes y facilitar, por la misma vía, la resolución consensuada de problemas.</p>
+			<p>Este marco educativo promueve la identidad cultural, la solidificación de los valores y la realización de todos aquellos proyectos relacionados con el desarrollo del potencial de los habitantes de esta hermosa región santandereana.</p>
+			<p>Tenemos dos ejes transversales, sustentados en principios de diversidad, equidad y justicia:</p>
+			<ol>
+				<li>La formación de habilidades emocionales y comunicativas para la vida.</li>
+				<li>La construcción de conciencia y conductas ambientales responsables.</li>
+			</ol>
+		</div>
 	</div>
 </section>
 <section class="pedag ppa orange">
 	<div class=cont>
-		<h1>Proyecto Pedagógico de Aula</h1>
-		<div>
+		<h2>Proyecto Pedagógico de Aula</h2>
+		<div class="innercontainer">
 			<p>Tres veces al año se diseña, prepara y desarrolla un proyecto en cada grado, que surge de una pregunta realizada en común por los estudiantes, en este proyecto se abarcan las diferentes áreas del conocimiento, unidas por un hilo conductor que le da orden lógico a todos los temas y trascendencia al proyecto en general.</p>
 			<p>Estos proyectos son comunicados permanentemente a los niños y a sus padres, motivando a estos últimos a involucrarse en el proceso educativo de sus hijos.</p> <p>Finalmente, al terminar cada proyecto los estudiantes evalúan el conocimiento adquirido y sugieren cambios para próximos proyectos</p>
 		</div>
 	</div>
 	<div class="pics">
-		<div class="foto left">
-			<img src="./img/proyecto-1.jpg" alt="proyecto-la-naturaleza">
+		<div class="projfoto">
+			<div class="imgcont left lightbox"><div class="exticon"><img src="/img/plus.png" alt="plus sign"></div></div>
 			<p>"La naturaleza"</p>
 		</div>
-		<div class="foto mid1">
-			<img src="./img/proyecto-2.jpg" alt="proyecto-zoologico-de-animales-fantasticos">
+		<div class="projfoto">
+			<div class="imgcont mid1 lightbox"><div class="exticon"><img src="/img/plus.png" alt="plus sign"></div></div>
 			<p>Zoologico de animales fantásticos</p>
 		</div>
-		<div class="foto mid2">
-			<img src="./img/proyecto-3.jpg" alt="proyecto-el-agua-y-la-vida">
+		<div class="projfoto">
+			<div class="imgcont mid2 lightbox"><div class="exticon"><img src="/img/plus.png" alt="plus sign"></div></div>
 			<p>El agua y la vida</p>
 		</div>
-		<div class="foto right">
-			<img src="./img/proyecto-4.jpg" alt="proyecto-cocina-fisica">
+		<div class="projfoto">
+			<div class="imgcont right lightbox"><div class="exticon"><img src="/img/plus.png" alt="plus sign"></div></div>
 			<p>Cocina Física</p>
 		</div>
 	</div>
 </section>
 
+<section class="pedag ecoescuela blue">
+	<div class="container left">
+		<h2>Ecoescuela</h2>
+		<div class="innercontainer">
+			<p>Ecoreserva Caracolí es el programa ambiental que materializa los aprendizajes ecológicos  del Colegio Fundareserva.</p>
+			<p>Tiene como ejes fundamentales, un componente formativo y otro productivo, teniendo como fin último la formación de líderes ambientales.</p>
+			<p>Desde 2009 hemos venido trabajando bajo el propósito de la autosostenibilidad. Hemos construido colectivamente una huerta orgánica, composteras para producir nuestros propios abonos, baños secos, sistemas de reutilización y reciclaje, de aprovechamiento de las aguas residuales, de recolección de aguas lluvias y potabilización.  También hemos reforestado el terreno del Colegio, como una reserva ecológica, y en compañía de los niños hemos hecho experimentos para la producción de energía alternativa.</p>
+		</div>
+	</div>
+	<div class="container right teardrop">
+		<div class="slider" id="slider">
+			<div class="intslide foto1"></div>
+			<div class="intslide foto2"></div>
+			<div class="intslide foto3"></div>
+		</div>
+	</div>
+</section>
+
+<!-- Inicio sección Footer -->
+
+<footer>
+	<div class="footer">
+		<div class="contenedor">
+			<h4>NOS APOYAN:</h4>
+			<div class="sponsors">
+				<img src="img/sprs1.png" alt="Sponsors">
+				<img src="img/sprs2.png" alt="Sponsors">
+				<img src="img/sprs3.png" alt="Sponsors">
+				<img src="img/sprs4.png" alt="Sponsors">
+				<img src="img/sprs5.png" alt="Sponsors">
+				<img src="img/sprs6.png" alt="Sponsors">
+				<img src="img/sprs7.png" alt="Sponsors">
+				<img src="img/sprs8.png" alt="Sponsors">
+				<img src="img/sprs9.png" alt="Sponsors">
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="contacto">
+			<p>fundareserva@yahoo.com <br> Teléfono: +57 (7) 7267469 <br> Cel: 3105664719</p>
+			<div class="redes">
+				<a href="#" ><img src="img/email.png" alt="email"></a>
+				<a href="#" ><img src="img/instagram.png" alt="instagram"></a>
+				<a href="#" ><img src="img/facebook.png" alt="facebook"></a>
+			</div>
+		</div>
+		<p class="developed">Desarrollado por Carlos Osorio Cadena©</p>
+	</div>
+</footer>
+
+<!-- Fin sección Footer -->
+
+<!-- Scripts -->
+<script src="js/menuMovil.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/lightbox.js"></script>
+
+</body>
+</html>

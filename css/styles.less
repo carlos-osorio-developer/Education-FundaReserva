@@ -3,48 +3,48 @@
 /*--------------------------------------------*/
 
 
-/* Colores */
+/* Colors */
 @negro-custom: #141618;
 @blanco : #fff;
 @texto-oscuro : #303133;
 @texto-claro : #777;
-@naranja : #ff6c00;
-@azul :  #1755E8;
+@naranja : #fb6d25;
+@azul :  #0081ff;
 @azul-claro : #4c74b5;
 @gris-claro: #eaeaea;
 
 
-/* Fuentes */
-@fuente-principal: 'Mandali', sans-serif;
+/* Fonts */
+@fuente-principal: 'Lato', sans-serif;
 @fuente-secundaria: 'Open Sans Condensed', sans-serif;
 
 
 
 /*--------------------------------------------*/
-// Estilos generales //
+// General Styles//
 /*--------------------------------------------*/
 
 
-*{
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
-body{	
+body {	
 	font-family: @fuente-principal;
 	font-size: 16px;
 	padding-top: 6.875em;
 	max-width: 1920px;
 }
 
-.contenedor{
+.contenedor {
 	width: 100%;
 	max-width: 1920px;
 	padding-bottom: 0.625rem;
 }
 
-.button{
+.button {
 	font-size: 18px;
 	text-align: center;
 	padding: 0.3em 1.3em;	
@@ -54,13 +54,45 @@ body{
 	color: @texto-oscuro;
 }
 
+.redes {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+	
+	a {
+		height:1em;
+		padding-bottom: 2.5em;
+	}
+	img {
+		width: 1.875em;			
+		margin: 0 0.3125em;
+	}
+}
+
+.blue {
+	background-image: url(../img/blue-brush.png);
+	background-repeat: no-repeat;
+	background-size: 110% 110%;
+	background-position: center;
+	position: relative;
+}
+
+.orange {
+	background: @naranja;
+	margin-top: -5%;
+}
+
+h2 {
+	color: @blanco;
+	font-size: 1.75em;
+}
 /***************************/
-/*INICIO DE CABECERA*/
+/*Header Begins*/
 /***************************/
 
-header {
+header  {
 	
-	.contenedor{
+	.contenedor {
 		position: fixed;
 		top:0;
 		width: 100%;
@@ -70,36 +102,26 @@ header {
 		box-shadow: @negro-custom 0px 3px 10px;
 	}
 
-	.logo {
+	.logo  {
 		padding: 0.1125em 0;
 	
-		img{
+		img {
 			width: 15.625em;
 			float: left;
 		}
-	}
-	
-	.redes{
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: flex-start;
-		
-		a{
-			height:1em;
-			padding-bottom: 2.5em;
-		}
-		img{
-			width: 1.875em;			
-			margin: 0 0.3125em;
+
+		.small-logo {
+			display: none;
 		}
 	}
 	
-	.menu{
+	
+	.menu {
 		float: right;
 		padding: 1rem 0.0625rem;
 		margin-right: 0.3125rem;
 	
-		a{
+		a {
 			height: 1.875rem;
 			padding: 0px 0.3125rem;
 			font-weight: bold;
@@ -109,23 +131,27 @@ header {
 			margin-left: 1.25rem;
 		}
 	
-		a[class="unactive"]:hover{
+		a[class="unactive"]:hover {
 			color: @azul-claro;
 			text-decoration: underline;
 		}
 	}
 	
-	/*Menú móvil*/
+/*Mobile menu*/
 	
-	.burguer-menu{
+	.burguer-menu {
 		cursor: pointer;
 		font-size: 2.3em;
 		color: @blanco;
 		float: right;
-		padding-right: 0.5em;
+		padding: 10px;
+
+		img {
+			width: 35px;			
+		}
 	}
 	
-	.slide-menu{
+	.slide-menu {
 		position: fixed;
 		z-index: 90;
 		top: -20%;
@@ -140,11 +166,11 @@ header {
 		-o-transition: all .3s ease ;
 		transition: all .3s ease;
 		
-		&.active{
+		&.active {
 			top: 5.75em;;
 		}
 
-		a{
+		a {
 			font-weight: bold;
 			text-transform: uppercase;
 			text-decoration: none;
@@ -157,16 +183,16 @@ header {
 }
 
 /***************************/
-/*Fin de la cabecera*/
+/*Header Ends*/
 /***************************/
 
 
 /***************************/
-/*INICIO DEL BANNER*/
+/*Index Page*/
 /***************************/
 
 
-.banner {
+.banner  {
 	width: 100%;
  	min-height: 65vh;
 	background-image: url(../img/banner-inicio.jpg);
@@ -174,7 +200,7 @@ header {
 	background-size: cover;	
 	position: relative;
 
-	.fondo1 {
+	.fondo1  {
 		display: block;
 		min-height: 60%;
 		width: 100%;
@@ -185,18 +211,18 @@ header {
 		left: 50%;
 		transform: translate(-50%, -50%);
 	
-		.llamada-accion {
+		.llamada-accion  {
 			text-align: center;
 			background-color: rgba(109, 106, 104, 0.4);
 		
-			 h1{				
+			 h1 {				
 				font-size: 2.8125em;
 				width: 100%;				
 				color: white;				
 				margin-bottom: 1em;
 			}
 		
-			p{
+			p {
 				padding: 10px;
 				font-size: 1.75em;
 				font-weight: bold;
@@ -210,26 +236,16 @@ header {
 	
 }
 
-/*FIN DEL BANNER*/
-
-
-/*INICIO DE ACCIÓN*/
-
-
-.pedagogia {
-	width: 100%;
-	max-width: 1920px;
- 	height: 28.125em;
-	background-image: url(../img/blue-brush.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-top: -3.125em;
+.pedagogia  {		
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	position: relative;
+	padding: 0 15px;
+	padding-bottom: 50px;
+	margin-top: -30px;
 
-	h2{
+	h2 {
 		font-size: 2rem;
 		width: 100%;
 		max-width: 350px;
@@ -238,7 +254,7 @@ header {
 		color: @blanco;
 	}
 
-	p{
+	p {
 		font-family: @fuente-secundaria;
 		font-size: 1.5rem;
 		width: 100%;
@@ -248,54 +264,45 @@ header {
 		color: @blanco;
 	}
 
-	a{
+	a {
 		margin-top: 2.8125em;		
 	}
 	
-	a:hover{
+	a:hover {
 		color : @naranja;
 		font-weight: bold;
 	}
 }
 
-/*FIN DE ACCION*/
+.nosotros  {
 
-/*INICIO DE NOSOTROS*/
-
-.nosotros {
-	background-color: @naranja;
-	margin-top: -5em;
-	width: 100%;
-
-	.contenedor {
+	.contenedor  {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		min-height: 25em;
-		height: 100%;
 
-		.foto-equipo {
+		.foto-equipo  {
 			width: 100%;
 			max-width: 25em;
 			margin-top: 8em;
 			margin-right:2em;
 		
-			img{
+			img {
 				width: 100%;
 				border-radius: 25px;
 				border: 2px solid @gris-claro;
 			}
 		}
 		
-		.conocenos{
+		.conocenos {
 			margin-top: 4em;
 			margin-left: 2em;
 			text-align: center;
 			max-width: 500px;
 			padding: 50px 60px;
 		
-			h2{
+			h2 {
 				line-height: 1.5em;
 				color: @azul;
 				font-weight: bold;
@@ -303,22 +310,22 @@ header {
 				border-bottom: 3px solid @blanco;
 			}
 		
-			p:nth-child(2){
+			p:nth-child(2) {
 				padding-top: 10px;
 				font-size: 18px;
 			}
 		
-			p:nth-child(3){
+			p:nth-child(3) {
 				padding-top: 20px;
 				font-size: 16px;
 				padding-bottom: 20px;
 			}
 		
-			a{
+			a {
 				margin-top: 2.8125em;				
 			}
 		
-			a:hover{
+			a:hover {
 				color: @azul-claro;
 				font-weight: bold;
 			}
@@ -328,11 +335,11 @@ header {
 	
 }
 
-/*FIN SECCIÓN NOSOTROS*/
+/*Index ends*/
 
-/*INICIO SECCIÓN FOOTER*/
+/*Footer begins*/
 
-.top-footer{
+.top-footer {
 	width: 100%;
 	max-width: 2200px;
  	height: 110px;
@@ -341,23 +348,24 @@ header {
 	background-size: cover;
 }
 
-.footer {
-	.contenedor{
-		.sponsors{
+.footer  {
+	padding-top: 30px;
+	.contenedor {
+		.sponsors {
 			display: flex;
 			flex-flow: row wrap;
 			align-content: center;
 			justify-content: center;
 			height: 100%;
 
-			img{
+			img {
 				width: auto;
 				max-width: 200px;
 				height: 110px;
 				padding: 20px;
 			}
 		}
-		h4{
+		h4 {
 			font-size: 24px;
 			text-align: center;
 		}
@@ -365,92 +373,43 @@ header {
 }
 
 
-.copyright{
+.copyright {
 	background-color: @naranja;
 	min-height: 2em;
 	max-width: 1920px;
 	width: 100%;
 
-	p{
+	.contacto {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		p {
+			font-size: 1em;
+			text-align: left;
+			line-height: 1.125em;
+			padding: 10px;
+		}
+	}
+
+	.developed {
 		text-align: right;
 		color: @negro-custom;
-		font-size: 14px;
+		font-size: 12px;
 		padding: 2px 5px;
+		margin-top: -10px;
 	}
 }
 
-/*FIN SECCIÓN FOOTER*/		
-
-/*MEDIA QUERIES INDEX*/
-
-@media all and (max-width: 1000px){
-	.nosotros{
-		.foto-equipo{
-			display: none;
-		}
-	}
-
-	.footer{
-		.contenedor{
-			.sponsors{
-				img{
-					max-width: 140px;				
-					height: 80px;
-					padding: 10px;
-				}
-			}
-		}
-	}
-
-	.nosotros .contenedor .conocenos{
-		margin-left: 0px;
-		margin-top:3.5em;
-	}
-}
-
-@media all and (max-width: 700px){
-	.menu{
-		display: none;
-	}
-
-	header .redes a{
-		padding-bottom: 2em;
-	}
-
-	.footer{
-		.contenedor{
-			.sponsors{
-				img{
-					max-width: 150px;				
-					height: 55px;
-					padding:5px;
-				}
-			}
-		}
-	}
-}
-
-@media all and (min-width: 700px){
-	.burguer-menu{
-		display: none;
-	}
-
-	.slide-menu{
-		display: none;
-	}
-}
-
-/**************************/
-/*FIN MEDIA QUERIES INDEX*/
-/************************/
+/*Footer ends*/		
 
 /*********************************/
-/*Inicio Página Nosotros*/
+/*Who are us Page begins*/
 /*********************************/
 
-.who-us{		
+.who-us {		
 
-	h1{		
+	h1 {		
 		display: block;
 		max-width: 320px;
 		margin: auto;	
@@ -463,12 +422,12 @@ header {
 		color: @blanco;
 	}	
 
-	.contenedor{
+	.contenedor {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;		
 
-		.pics-huellas{
+		.pics-huellas {
 			display: flex;
 			flex-wrap: wrap;
 			height: 100%;
@@ -476,15 +435,15 @@ header {
 			margin-left: 2em;			
 			padding-top: 10px;	
 
-			div{
+			div {
 				width: 180px;
 				background: rgba(150, 150, 150, 0.5);
 				border-radius: 20px;
 				margin: 5px 10px;
 				
-				a{
-					img{
-						max-width: 160px;	
+				a {
+					img {
+						max-width: 90%;	
 						margin: 0 5px;							
 						filter: drop-shadow(3px 3px 2px @negro-custom);
 						-webkit-transition: all .3s ease;
@@ -492,54 +451,54 @@ header {
 						transition: all .3s ease;
 					}											
 	
-					.active{
+					.active {
 						transform: scale(1.1,1.1);
 						filter: drop-shadow(6px 6px 3px @negro-custom);
 					}
 	
-					.imgh4{
-						margin-top: 20px;
+					.imgh4 {
+						margin-top: 10px;
 					}
 	
-					.imgh5{
+					.imgh5 {
 						margin-top: 10px;
 					}
 				}
 			}
 				
-			.huellas1{
+			.huellas1 {
 				padding: 5px 0px;					
 			}
 
-			.huellas2{					
+			.huellas2 {					
 				padding: 5px 0px;
 			}
 
-			.huellas3{
+			.huellas3 {
 				margin-left: 60px;
 				padding: 5px 0px;
 			}		
 
-			.huellas7{
+			.huellas7 {
 				margin-left: 60px;
 				padding: 5px 0px;
 			}		
 			
 		}
 
-		.pics-down div{
+		.pics-down div {
 			padding: 5px;
 			margin: 10px;
 		}
 
-		.cont-h{
+		.cont-h {
 			
 			max-width: 500px;
 			width: 60%;
 			text-align: center;
 			margin: auto;
 
-			>div{
+			>div {
 				padding: 20px;
 				border: @blanco solid 3px;
 				border-radius: 30px;
@@ -550,18 +509,18 @@ header {
 				transition: all .3s ease;
 			}
 
-			.active{
+			.active {
 				display: block;
 			}
 
-			h2{
+			h2 {
 				border-bottom: @blanco solid 2px;
 				color: @blanco;
 				font-size: 1.75em;
 				line-height: 45px;
 			}
 
-			p{
+			p {
 				margin-top: 30px;
 				font-family: @fuente-secundaria;
 				font-size: 1.25em;
@@ -569,14 +528,14 @@ header {
 			}
 		}
 
-		.pics-up{
+		.pics-up {
 			background-image: url(../img/huellasBrush1.png);
 			background-repeat: no-repeat;
 			background-position-x: -20px;
 			background-size: 400px 500px;	
 		}
 
-		.pics-down{
+		.pics-down {
 			background-image: url(../img/huellasBrush2.png);
 			background-repeat: no-repeat;
 			background-position-y: 70px;
@@ -586,34 +545,32 @@ header {
 
 	}
 
-	.to-pedagogy{
-		padding-top: 20px;
-		margin-top: 25px;
-		border-top: @gris-claro double 4px;
+	.to-pedagogy {
+		padding: 20px 15px;
+		max-width: 450px;
+		margin: 0 auto;
 
-		h2{
+		h2 {
 			text-align: center;
-			font-size: 30px;
-			width: 500px;
-			margin: auto;
+			font-size: 30px;						
 			border-bottom: @blanco solid 3px;
-			margin-bottom: 30px;
-			color: @blanco;
+			padding-bottom: 5px;
+			margin-bottom: 30px;			
 		}
 
-		a{
+		a {
 			display: block;
 			max-width: 150px;
 			margin: auto;			
 		}
 
-		a:hover{
+		a:hover {
 			color: @azul-claro;
 			font-weight: bold;
 		}
 	}
 
-	&.info-sh{	
+	&.info-sh {	
 		width: 100%;
 		min-height: 28em;
 		background-image: url(../img/nos-bg.jpg);
@@ -623,18 +580,18 @@ header {
 		padding-top: 20px;
 		padding-bottom: 40px;
 	
-		h1{
+		h1 {
 			background: rgba(109, 106, 104, 0.8);
 			padding: 5px;
 			max-width: 340px;
 			margin-bottom: 30px;
 		}
 	
-		.contenedor{
+		.contenedor {
 			display: block;	
 		}
 	
-		p{
+		p {
 			max-width: 1000px;
 			width: 80%;
 			text-align: center;
@@ -649,7 +606,7 @@ header {
 		}
 	}
 
-	&.Hup{
+	&.Hup {
 		background-image: url(../img/blue-brush.png);
 		background-repeat: no-repeat;
 		background-size: 150% 680px;
@@ -659,35 +616,46 @@ header {
 		padding-top: 86px;
 	}
 
-	&.Hdown{
+	&.Hdown {
 		background: @naranja;
 		margin-top: -70px;
+
+		.contenedor {
+			padding-bottom: 40px;
+			border-bottom: @gris-claro double 4px;
+		}
 	}
 }
 
 /*********************************/
-/*Fin Página Nosotros*/
+/*Who are us Page ends*/
 /*********************************/
 
 /*********************************/
-/*Inicio Página Pedagogía*/
+/*Pedagogy Page begins*/
 /*********************************/
 
-.pedag{
-	&.blue{
-		background-image: url(../img/blue-brush.png);
-		background-repeat: no-repeat;
-		background-size: 150% 100%;
-		height: auto;
-		position: relative;		
+.pedag {	
+	.innercontainer {					
+		padding: 20px 30px;
+		background: rgba(255, 255, 200, 0.35);
+		margin-bottom: 40px;
+		border-radius: 30px;
 	}
 
-	&.orange{
-		background: @naranja;
-		height: auto;		
+	h2 {
+		width: 35%;
+		display: block;
+		text-align: center;
+		max-width: 320px;
+		margin: auto;					
+		line-height: 50px;
+		font-size: 2.3em;		
+		text-align: center;				
+		color: @blanco;
 	}
 
-	&.propuesta{	
+	&.propuesta {	
 		margin-top: -90px;
 		padding-top: 95px;
 		padding-bottom: 60px;	
@@ -695,30 +663,31 @@ header {
 		flex-direction: row;
 		flex-wrap: nowrap;
 
-		.container{
+		.container {
 			margin:10px;
 
-			&.left{
+			&.left {
 				max-width: 450px;
 				width: 45%;
-				img{
+				img {
 					margin-left: 20px;
 					padding: 10px;
 					filter: drop-shadow(5px 5px 3px @negro-custom);
 				}
-				em{
+				em {
 					display: block;
 					font-family: @fuente-secundaria;
 					font-size: 20px;
 					color: @blanco;
 					padding: 0px 20px;
 
-					i{					
+					img {			
+						margin-left: 0;		
 						padding: 0 5px;					
-						font-size: 25px;
+						width: 37px;
 					}
 
-					span{
+					span {
 						display: block;
 						text-align: right;
 						padding-top: 10px;
@@ -728,22 +697,21 @@ header {
 				
 			}
 
-			&.right{
+			&.right {		
 				width: 55%;
-				padding: 20px 30px;
-				background: rgba(255, 255, 200, 0.35);
-				margin-bottom: 40px;
-				border-radius: 30px;
-				h1{
+
+				h1 {
+					font-size: 2.3em;
+					color: @blanco;
 					text-align: center;
 					margin-bottom: 10px;
-				}
+				}				
 
-				p{
+				p {
 					margin-bottom: 10px;
 				}
 				
-				ol{
+				ol {
 					margin-left: 30px;
 				}
 
@@ -751,42 +719,592 @@ header {
 		}
 	}	
 
-	&.ppa{
+	&.ppa {
 		margin-top: -100px;
-		padding-top: 80px;
+		padding-top: 100px;
+		padding-bottom: 60px;
 		display: block;
-		.cont{
+		.cont {
+			margin-top: 20px;
 			width: 100%;
 			display: flex;
 			flex-direction: row;
-			flex-wrap: nowrap;
+			flex-wrap: nowrap;			
 
-			h1{
-				width: 35%;
-				display: block;
-				text-align: center;
-				max-width: 320px;
-				margin: auto;	
-				background: rgba(255, 255, 200, 0.35);
-				line-height: 50px;
-				font-size: 2.3em;		
-				text-align: center;
-				border: @gris-claro double 4px;
-				border-radius: 20px;
-				color: @blanco;
-			}
-
-			div{
+			div {
 				width: 65%;				
-				padding: 20px 30px;
-				background: rgba(255, 255, 200, 0.35);
-				margin: 40px 30px;
-				border-radius: 30px;
+				margin: 40px 30px;			
 
-				p{
+				p {
 					margin-bottom: 10px;
 				}
 			}
 		}
+
+		.pics {
+			display: flex;
+			justify-content: space-around;
+
+			.imgcont {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				overflow: hidden;
+				position: relative;
+
+				&.left {
+					background-image: url(../img/proyecto-1.jpg);
+					background-size: cover;
+					background-position-x: 50%;
+				}
+
+				&.mid1 {
+					background-image: url(../img/proyecto-2.jpg);
+					background-size: cover;
+				}
+
+				&.mid2 {
+					background-image: url(../img/proyecto-3.jpg);
+					background-size: cover;
+					background-position-x: 90%;
+				}
+
+				&.right {
+					background-image: url(../img/proyecto-4.jpg);
+					background-size: cover;
+				}
+			}
+			.projfoto {
+				display: flex;
+				flex-direction: column;
+				max-width: 150px;
+				position: relative;
+
+				img:hover {
+					opacity: 0.4;
+					
+				}
+
+				.exticon {
+					opacity: 0;
+					width: 100%;
+					height: 100%;
+					background: rgba(20, 22, 24, 0.4);
+					cursor: pointer;
+					
+					img {						
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						width: 37px;
+					}
+				}
+
+				.exticon:hover {
+					opacity: 1;
+				}
+
+				p {
+					padding-top: 10px;
+					font-family: @fuente-secundaria;
+					color: @blanco;
+					font-size: 1.25em;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	&.ecoescuela {
+		margin-top: -60px;
+		padding: 50px 0;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		align-items: center;
+
+		.left {
+			width: 60%;
+
+			h2 {
+				padding: 20px 0;
+			}
+
+		}
+
+		.right {
+			margin-top: 50px;
+			width: 280px;
+			height: 280px;			
+			border-radius: 50%;
+			border-top-right-radius: 0;
+			transform: rotate(-45deg);
+			overflow: hidden;
+			position: relative;
+
+			.slider {	
+				position: absolute;	
+				top: 53%;
+				left: -23%;
+				transform: rotate(45deg);
+				width: 300%;				
+				display: flex;
+
+
+				.intslide {					
+					width: 100%;
+					min-height: 340px;					
+					background-position: center;
+					background-size: cover;
+				} 
+
+				.foto1 {
+					background-image: url(../img/proyecto-3.jpg);
+				}
+
+				.foto2 {
+					background-image: url(../img/proyecto-1.jpg);
+				}
+
+				.foto3 {
+					background-image: url(../img/proyecto-4.jpg);
+				}
+			}
+		}
+
+		
 	}
 }
+
+.imagen-modal{
+	width: 90%;
+	max-width: 800px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+#cerrar_modal {
+	width: 45px;
+	position: absolute;
+	top: 2%;
+	right: 1%;
+	display: inline-block;
+	padding: 0.2rem 0.2rem;
+	cursor: pointer;
+}
+
+/* Pedagogy Page ends */
+
+/* Contact us Page begins */
+
+.contact {	
+	padding: 75px 0;
+	margin-top: -50px;
+
+	p {
+		line-height: 20px;
+	}
+
+	h3 {
+		line-height: 20px;
+		padding: 5px 0;
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 10px;
+	}
+
+	span {
+		line-height: 20px;
+	}
+
+	.father-div {
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		background: rgb(236 226 255 / 80%);
+		border-radius: 20px;
+		overflow: hidden;
+	}
+	
+	.contact-info {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;		
+		color: @gris-claro;
+
+		img{
+			height: 30px;
+			width: 30px;
+			margin: 0 2px;
+		}
+
+		li {
+			display: flex;
+			align-items: center;
+			margin: 5px 0;
+		}
+	}
+
+	.form {
+		width: 50%;
+		margin-top: 30px;
+		margin-left: 20px;
+
+		h2 {
+			color: @negro-custom;
+		}
+
+		li {
+			margin: 5px 0;
+		}
+
+		label {
+			font-weight: bold;
+		}
+	}
+
+	.contact-social {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		padding-right: 5px;
+    	padding-bottom: 5px;
+		background-color: @naranja;
+	}
+
+	.contact-data {
+		position: absolute;
+		top: 20%;
+		z-index: 5;
+		background-color: rgb(20, 22, 24);
+
+		h2 {
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+
+		h4 {
+			padding: 0 5px;
+		}
+
+	}
+}
+
+.donate {
+	padding: 100px 0;
+	text-align: center;
+
+	h2{
+		margin-bottom: 20px;
+	}
+
+	a:hover {
+		color: @azul-claro;
+		font-weight: bold;
+	}
+}
+
+/*Contact us Page ends*/
+
+/*MEDIA QUERIES Begins*/
+
+@media all and (max-width: 1000px) {
+	.nosotros {
+		.foto-equipo {
+			display: none;
+		}
+	}
+
+	.footer {
+		.contenedor {
+			.sponsors {
+				img {
+					max-width: 140px;				
+					height: 80px;
+					padding: 10px;
+				}
+			}
+		}
+	}
+
+	.nosotros .contenedor .conocenos {
+		margin-left: 0px;
+		margin-top:3.5em;
+	}
+
+	.who-us .contenedor .pics-huellas {
+		max-width: 400px;
+		margin-left: 0.5em;
+		.footpic {
+			width: 150px;
+		}
+	}
+
+	.who-us .contenedor {
+		.conth-up {
+			margin-right: 15px;
+		}
+
+		.conth-down {
+			margin-left: 15px;
+			padding-top: 80px;
+		}
+	}
+}
+
+@media all and (max-width: 768px) {
+	.menu {
+		display: none;
+	}
+
+	header .redes a {
+		padding-bottom: 2em;
+	}
+
+	.who-us {
+		&.Hup {
+			h1 {
+				font-size: 1.875rem;
+				max-width: 300px;
+				padding: 0 5px;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.who-us .contenedor {
+		flex-direction: column;
+		align-items: center;
+		padding: 0 10px;
+
+		h1 {
+			font-size: 1.875rem;
+			max-width: 300px;
+			padding: 0 5px;
+			margin: 0 auto;
+		}
+
+		p {
+			width: 90%;
+		}
+
+		.pics-huellas {
+			background-size: cover;
+			flex-wrap: nowrap;
+			margin: 10px 0;
+			width: 100%;
+			max-width: 600px;
+		}
+
+		.pics-up {
+			background-image: url(../img/mob-huellasBrush1.png);
+			
+			div{
+				margin: 5px 3px;
+			}
+
+			.huellas3 {
+				margin-left: 0;
+			}
+		}
+
+		.pics-down {
+			background-image: url(../img/mob-huellasBrush2.png);
+			padding-top: 0;
+			background-position-y: 0;
+
+			div {
+				margin: 5px 3px;
+			}
+
+			.huellas7 {
+				margin-left: 0;
+			}
+		}
+
+		.cont-h {
+			width: 90%;
+			margin: 5px 0;
+		}		
+	}
+
+	.pedag {
+
+		&.propuesta {
+		flex-direction: column;
+		align-items: center;
+
+		img {
+			display: none;
+		}
+		.container {
+			&.right {
+			width: 90%;
+			margin: 0 auto;
+
+			h1 {
+			font-size: 1.875rem;			
+			margin: 10px 10px;
+			}
+			}	
+
+			&.left {
+				width: 90%;
+			}
+		}
+		}
+
+		
+
+		.innercontainer {
+			margin: 0;
+		}
+
+		&.ppa {
+			.cont{
+				flex-direction: column;
+				align-items: center;
+
+				h2 {
+					font-size: 1.875rem;
+					width: 90%;
+				}
+
+				.innercontainer {
+					width: 90%;
+					margin: 15px;
+				}
+			}
+
+			.pics {
+				margin: 0 10px;
+				width: 95%;
+				flex-wrap: wrap;
+
+				.projfoto {					
+					margin: 5px;					
+				}
+			}
+		}
+
+		&.ecoescuela {
+			flex-direction: column;
+			align-items: center;
+
+			.container {
+
+				&.left{
+					width: 95%;	
+				}
+							
+				h2 {
+					font-size: 1.875rem;
+					width: 90%;
+				}
+
+				&.right {
+					width: 150px;
+					height: 150px;
+
+					.intslide {
+						min-height: 180px;
+					}
+				}
+		}
+		}
+	}
+
+	.contact .father-div{
+		flex-direction: column;
+		justify-content: center;
+
+		.form {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			width: 90%;
+
+			.text{
+				flex: 1 1 190px;
+			}
+		}
+
+		.contact-info {
+			flex-direction: column-reverse;
+		}
+
+		.contact-data {
+			position: static;
+
+			h4 {
+				display: none;
+			}
+
+			img {
+				margin-right: 10px;
+			}
+		}
+
+		.contact-social {
+			justify-content: flex-end;
+			padding-top: 5px;
+		}
+	}
+
+	.footer {
+		.contenedor {
+			.sponsors {
+				img {
+					max-width: 150px;				
+					height: 55px;
+					padding:5px;
+				}
+			}
+		}
+	}
+
+	.copyright .contacto p {
+		font-size: 0.875rem;
+	}
+}
+
+@media all and (max-width: 380px) {
+	header .contenedor .logo{
+		.big-logo {
+			display: none;
+		}
+		.small-logo {
+			display: block;
+			
+			
+			img {
+				width: 150px;	
+				margin: 10px 2px;			
+			}
+		}
+	}
+}
+
+@media all and (min-width: 769px) {
+	.burguer-menu {
+		display: none;
+	}
+
+	.slide-menu {
+		display: none;
+	}
+}
+
+/**************************/
+/*MEDIA QUERIES ends*/
+/************************/

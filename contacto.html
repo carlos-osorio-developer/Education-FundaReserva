@@ -5,9 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<title>FundaReserva.org</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Mandali&family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
-	<script src="https://kit.fontawesome.com/69c8e727d8.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/prefixfree.min.js"></script>
 </head>
 
@@ -17,12 +16,13 @@
 <header>
 	<div class="contenedor">
 		<div class="logo">
-			<a href="./index.html"><img src="img/logo.png" class="logo"></a>
+			<a class="big-logo" href="./index.html"><img src="img/logo.png" alt="logo"></a>
+			<a class="small-logo" href="./index.html"><img src="img/logo-crop.png" alt="logo"></a>
 		</div>
 		<div class="redes">
-			<a href="#" ><img src="img/email.png" class="email"></a>
-			<a href="#" ><img src="img/instagram.png" class="instagram"></a>
-			<a href="#" ><img src="img/facebook.png" class="facebook"></a>
+			<a href="#" ><img src="img/email.png" alt="email icon"></a>
+			<a href="#" ><img src="img/instagram.png" alt="instagram logo"></a>
+			<a href="#" ><img src="img/facebook.png" alt="facebook logo"></a>
 		</div>
 		<div class="menu">
 			<a class="unactive" href="./index.html">Inicio </a>
@@ -31,7 +31,7 @@
 			<a href="./contacto.html" style="background-color: rgba(255,255,255,0.4);">Contacto </a>
 		</div>
 		<div class="burguer-menu" id="burguer_menu">
-			<i class="fas fa-bars"></i>
+			<img src="/img/bars.png" alt="bars menu">
 		</div>
 	</div>
 
@@ -45,5 +45,88 @@
 	</div>
 </header>
 <!-- Fin del encabezado -->
-
 <!-- Donaciones -->
+
+<section class="contact container blue">
+	<div class="father-div">
+		<div class="form">
+			<div class="text">
+			<h2>Escríbenos</h2>
+			<h3>Déjanos un mensaje con tus inquietudes y pronto te contactaremos</h3>
+			</div>
+			<form action="#" method="post">
+				<ul>
+					<li><label for="name">Nombre:</label></li>
+					<li><input type="text" name="user-name" id="name" placeholder="Tu nombre" required></li>
+					<li><label for="mail">Correo electrónico:</label></li>
+					<li><input type="email" name="user-mail" id="mail" placeholder="Tu email" required minlength="3"></li>
+					<li><label for="telephone">Teléfono (opcional):</label></li>
+					<li><input type="tel" name="user-tel" id="telefono" placeholder="Tu telefono"></li>
+					<li><label for="message">Deja tu mensaje aquí:</label></li>
+					<li><textarea name="user-msg" id="message" cols="21" rows="6" minlength="50" maxlength="250" placeholder="Tu mensaje"></textarea></li>
+				</ul>
+			</form>
+		</div>
+		<div class="contact-info">
+			<div class="contact-data">
+			<h2>Contacto</h2>
+			<ul>
+				<li><img src="img/email.png" alt="email icon"><h4>Correo: </h4><span>fundareserva@yahoo.com</span></li>
+				<li><img src="img/house.png" alt="house icon"><h4>Dirección: </h4><span>Vereda Llano Higueras, Km 4 vía Barichara/San Gil</span></li>
+				<li><img src="img/phone.png" alt="phone icon"><h4>Teléfono: </h4><span>+57 (7) 7267469 - 3105664719</span></li>
+				<li><img src="img/clock.png" alt="clock icon"><h4>Horario: </h4><span>7am - 5pm</span></li>				
+			</ul>
+			</div>
+			<div class="contact-social">
+				<a href="#" ><img src="img/email.png" alt="email icon"></a>
+				<a href="#" ><img src="img/instagram.png" alt="instagram logo"></a>
+				<a href="#" ><img src="img/facebook.png" alt="facebook logo"></a>
+			</div>
+		</div>
+	</div>	
+	
+</section>
+<section class="donate container orange">
+	<h2>¿Quieres apadrinar a un niño o hacer una donación?</h2>
+	<a class="button" href="#">INGRESA AQUÍ</a>
+</section>
+
+<!-- Footer -->
+<footer>
+	<div class="top-footer"></div>	
+	<div class="footer">
+		<div class="contenedor">
+			<h4>NOS APOYAN:</h4>
+			<div class="sponsors">
+				<img src="img/sprs1.png" alt="Sponsors">
+				<img src="img/sprs2.png" alt="Sponsors">
+				<img src="img/sprs3.png" alt="Sponsors">
+				<img src="img/sprs4.png" alt="Sponsors">
+				<img src="img/sprs5.png" alt="Sponsors">
+				<img src="img/sprs6.png" alt="Sponsors">
+				<img src="img/sprs7.png" alt="Sponsors">
+				<img src="img/sprs8.png" alt="Sponsors">
+				<img src="img/sprs9.png" alt="Sponsors">
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="contacto">
+			<p>fundareserva@yahoo.com <br> Teléfono: +57 (7) 7267469 <br> Cel: 3105664719</p>
+			<div class="redes">
+				<a href="#" ><img src="img/email.png" alt="email"></a>
+				<a href="#" ><img src="img/instagram.png" alt="instagram"></a>
+				<a href="#" ><img src="img/facebook.png" alt="facebook"></a>
+			</div>
+		</div>
+		<p class="developed">Desarrollado por Carlos Osorio Cadena©</p>
+	</div>
+</footer>
+
+<!-- Fin sección Footer -->
+<!-- Scripts -->
+<script src="js/menuMovil.js"></script>
+
+
+</body>
+</html>
