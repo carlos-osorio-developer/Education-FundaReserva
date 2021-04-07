@@ -15,10 +15,10 @@ It is based on HTML, CSS, Less and Javascript.
 
 ## Screenshots
 
-- Mobile view
+Mobile view
 ![Mobile](./img/screenshot-mobile.png)
  
-- Large Screen
+Large Screen
 ![Large Screen](./img/screenshot-desktop.png)
 
 ## Live Demo
@@ -35,13 +35,13 @@ From your command line, first clone the project:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/carlos-osorio-developer/Education-FundaReserva
+git clone https://github.com/carlos-osorio-developer/Education-FundaReserva
 
 # Go into the repository
-$ cd Education-FundaReserva
+cd Education-FundaReserva
 
 # Open the project on Vscode
-$ code .
+code .
 
 ```
 
