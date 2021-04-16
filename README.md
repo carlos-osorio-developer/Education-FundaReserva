@@ -23,7 +23,7 @@ Large Screen
 
 ## Live Demo
 
-[FundaReserva website](http://fundareservabarichara.surge.sh)
+[FundaReserva website](http://fundareserva.surge.sh)
 
 # Getting Started 🚀
 
