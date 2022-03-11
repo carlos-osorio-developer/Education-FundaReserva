@@ -44,6 +44,9 @@ cd Education-FundaReserva
 code .
 
 ```
+## To improve:
+
+- Use React to refactor it as a SPA.
 
 ## Authors
 
